@@ -1,0 +1,141 @@
+body{
+    background-color: #e2eafc;
+}
+.container{
+    height:380px;
+}
+#envelope{
+    position:relative;
+    height:180px;
+    width:280px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    background-color: #b6ccfe;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+#envelope:hover{
+    cursor: pointer;
+}
+
+.front{
+    position:absolute;
+    width: 0;
+    height: 0;
+    z-index:3;
+}
+.flap{
+    border-top: 98px solid #c1d3fe;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 82px solid transparent;
+    transform-origin: top;
+}
+.pocket{
+    border-left: 140px solid #abc4ff;
+    border-right: 140px solid #abc4ff;
+    border-bottom: 90px solid #9dadd1;
+    border-top: 90px solid transparent;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.open .flap{
+    transform: rotateX(180deg);
+    transition: transform 0.4s ease;
+    z-index: 1;
+}
+.close .flap{
+    transform: rotateX(0deg);
+    transition: transform 0.4s 0.6s ease, z-index 1s;
+    z-index: 5;
+}
+
+.open .letter{
+    transform: translateY(-120px);
+    transition: transform 0.4s 0.6s ease, s-index 0.6s;
+    z-index:2;
+}
+.close .letter{
+    transform: translateY(0deg);
+    transition: transform 0.4s ease, z-index 1s;
+    z-index:1;
+}
+.letter{
+    position:relative;
+    background-color: beige;
+    width: 90%;
+    height: 95%;
+    top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin-right: auto;
+    margin-left: auto;
+}
+.words{
+    position: absolute;
+    left: 10%;
+    width:80%;
+    height: 14%;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+.line1{
+    top: 5%;
+}
+.line2{
+    top: 20%;
+}
+.line3{
+    top: 40%;
+    text-align: center;
+}
+.line4{
+    top:55%;
+    text-align: center;
+}
+
+.close{
+    text-align: center;
+}
+.close button{
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.1s linear;
+    background-color: transparent;
+    border: solid 2px #9dadd1;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    line-height: 2em;
+    text-decoration: none;
+    min-width: 150px;
+    outline: none;
+}
+.close button:hover{
+    background-color: #9dadd1;
+    cursor:pointer; 
+    color:white;
+}
+.Page{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 70px;
+    margin: 100px;
+}
+
+#car-image, #car2-image{
+    margin: 20px;
+    max-width: 35%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.hidden{
+    display: none;
+}

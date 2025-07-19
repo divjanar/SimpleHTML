@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="next.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>Simple HTML Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="envelope" class="close">
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                <div class="letter">
+                    <p class="words line1">Hello,</p>
+                    <p class="words line2">HELLO WORLD!</p>
+                    <p class="words line3">Thank you,</p>
+                    <p class="words line4">greycard</p>
+                </div>
+            </div>
+        </div>  
+        <h1 style="font-family:Serif" class="Page">NEXT PAGE</h1>
+        <div class="close">
+            <button id="open">OPEN</button>
+            <button id="close">CLOSE</button>
+            <a href="../index.html" class="glass-button">BACK</a>
+        </div>
+
+        <!--
+        <img id="car-image" src="../assets/car.jpg" alt="Car Image" class="hidden">
+        <img id="car2-image" src="../assets/car2.jpg" alt="Car2 Image" class="hidden">
+        -->
+
+        <!--Background Video-->
+        <video autoplay muted loop id="bg-video">
+            <source src="../assets/red.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <script src="next.js"></script>
+    </body>
+</html>
